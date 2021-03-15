@@ -1,0 +1,51 @@
+{
+  "root": true,
+
+  "env": {
+    "es6": true,
+    "browser": true,
+    "node": true
+  },
+
+  "parser": "vue-eslint-parser",
+
+  "parserOptions": {
+    "parser": "@typescript-eslint/parser",
+    "project": "tsconfig.json",
+    "ecmaVersion": 2020,
+    "sourceType": "module",
+
+    "vueFeatures": {
+      "filter": true
+    },
+
+    "extraFileExtensions": [".vue", ".ts"]
+  },
+
+  "plugins": [
+    "@typescript-eslint"
+  ],
+
+  "extends": [
+    "eslint:recommended",
+    "plugin:vue/recommended",
+    "plugin:prettier-vue/recommended",
+    "plugin:@typescript-eslint/recommended",
+    "@vue/typescript/recommended"
+  ],
+
+  "rules": {
+    "no-debugger": "off",
+    "no-console": 0,
+    "semi": [
+      "error",
+      "always"
+    ],
+    "quotes": [
+      "error",
+      "single"
+    ],
+
+    "vue/html-indent": [0, "tab"]
+  }
+}

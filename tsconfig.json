@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "outDir": "./public/",
+    "baseUrl": "/",
+    "paths": {
+      "@Components/*": ["frontend/application/components/*"],
+      "@Assets/*": ["frontend/assets/*"]
+    },
+
+    "target": "es5",
+    "module": "es2020",
+    "experimentalDecorators": true,
+    "jsx": "preserve",
+    "moduleResolution": "node",
+    "strict": true,
+    "lib": ["es6", "esnext", "dom", "dom.iterable"],
+    "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true,
+    "noImplicitThis": false,
+    "sourceMap": true
+  },
+
+  "include": [
+    "./frontend/vue-shim.d.ts",
+    "./frontend/**/*"
+  ]
+}
